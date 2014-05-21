@@ -3,13 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hier de naam van de organisatie</title>
+<title>Naam van de organisatie</title>
 <style type="text/css">
 
 	/* styles to fix email clients */
-	#outlook a{padding:0;}
-	.ReadMsgBody {width:100%;} .ExternalClass {width:100%;}
-	.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+	#outlook a{padding:0;} .ReadMsgBody {width:100%;} 
+	/* .ExternalClass {width:100%;} .ExternalClass * {line-height: 100%;} */
 	body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
 	img{-ms-interpolation-mode:bicubic;}
 
@@ -96,6 +95,49 @@
 		text-align: center;
 	}
 
+	.text-img-left {
+		padding: 10px 20px;
+	}
+
+	.text-img-left .h1 {
+		padding-bottom: 12px;
+		font-size: 26px;
+		line-height: 30px;
+		font-weight: bold;
+	}
+
+	.text-img-left .text {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.text-img-right {
+		padding: 10px 20px;
+	}
+
+	.text-img-right .h1 {
+		padding-bottom: 12px;
+		font-size: 26px;
+		line-height: 30px;
+		font-weight: bold;
+	}
+
+	.text-img-right .text {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.banner {
+		padding: 10px 20px;
+	}
+
+	.banner .h1 {
+		padding-bottom: 12px;
+		font-size: 26px;
+		line-height: 30px;
+		font-weight: bold;
+	}
+
 	.footer {
 		padding: 16px 20px;
 	}
@@ -159,6 +201,46 @@
 		}
 
 		td[class="threecol"] .text {
+			font-size: 18px !important;
+			line-height: 24px !important;
+			padding-bottom: 20px;
+		}
+
+		td[class="text-img-left"] .cols table {
+			width: 100% !important;
+			padding: 0 !important;
+		}
+
+		td[class="text-img-left"] .h1 {
+			font-size: 30px !important;
+			line-height: 36px !important;
+		}
+
+		td[class="text-img-left"] .image {
+			padding: 4px 4px 16px 4px;
+		}
+
+		td[class="text-img-left"] .text {
+			font-size: 18px !important;
+			line-height: 24px !important;
+			padding-bottom: 20px;
+		}
+
+		td[class="text-img-right"] .cols table {
+			width: 100% !important;
+			padding: 0 !important;
+		}
+
+		td[class="text-img-right"] .h1 {
+			font-size: 30px !important;
+			line-height: 36px !important;
+		}
+
+		td[class="text-img-right"] .image {
+			padding: 4px 4px 16px 4px;
+		}
+
+		td[class="text-img-right"] .text {
 			font-size: 18px !important;
 			line-height: 24px !important;
 			padding-bottom: 20px;
@@ -266,12 +348,12 @@
 			<table width="100%" border="0" cellspacing="0" cellpadding="0">
 				<tr>
 					<td align="left" class="h1">
-						<lp-singleline lp-label="Kop">Lorem ipsum dolor sit amet</lp-singleline>
+						<lp-singleline lp-label="Kop">Hier een grote kop</lp-singleline>
 					</td>
 				</tr>
 				<tr>
 					<td align="left" class="text">
-						<div><lp-multiline lp-label="Tekst">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<img width="160" hspace="16" vspace="6" lp-label="Afbeelding binnen tekst"></lp-multiline></div>
+						<div><lp-multiline lp-label="Tekst">De tekst in dit blok loopt om de afbeelding heen. De afbeelding kan in grootte worden aangepast en met behulp van de pijltjes aan weerszijden van dit blok zowel links, rechts als over de gehele breedte worden geplaatst.<br><br>Dit sjabloon is volledig responsive; wat wil zeggen dat de inhoud op kleine schermen aangepast gepresenteerd wordt.<img width="160" hspace="16" vspace="6" lp-label="Afbeelding binnen tekst"></lp-multiline></div>
 					</td>
 				</tr>
 			</table>
@@ -290,7 +372,7 @@
 					<td align="center" class="pad">
 						<table cellpadding="0" cellspacing="0" border="0" width="100%">
 							<tr>
-								<td class="h1">
+								<td align="left" class="h1">
 									<lp-singleline lp-label="Kop">Cool new stuff</lp-singleline>
 								</td>
 							</tr>
@@ -301,7 +383,7 @@
 											<td align="center" bgcolor="#ffffff"><p style="mso-table-lspace:0;mso-table-rspace:0;"><img src="http://placehold.it/160x160" lp-edit width="160" class="responsive-img" lp-label="Afbeelding"></p></td>
 										</tr>
 										<tr>
-											<td class="text" bgcolor="#ffffff"><lp-multiline lp-label="Onderschrift">Description</lp-multiline></td>
+											<td class="text" bgcolor="#ffffff"><lp-multiline lp-label="Onderschrift">Onderschrift</lp-multiline></td>
 										</tr>
 									</table>
 									<table border="0" cellpadding="0" cellspacing="0" width="33%" align="left" style="border:1px solid #ffffff">
@@ -309,7 +391,7 @@
 											<td align="center" bgcolor="#ffffff"><p style="mso-table-lspace:0;mso-table-rspace:0;"><img src="http://placehold.it/160x160" lp-edit width="160" class="responsive-img" lp-label="Afbeelding"></p></td>
 										</tr>
 										<tr>
-											<td class="text" bgcolor="#ffffff"><lp-multiline lp-label="Onderschrift">Description</lp-multiline></td>
+											<td class="text" bgcolor="#ffffff"><lp-multiline lp-label="Onderschrift">Onderschrift</lp-multiline></td>
 										</tr>
 									</table>
 									<table border="0" cellpadding="0" cellspacing="0" width="33%" align="left" style="border:1px solid #ffffff">
@@ -317,7 +399,7 @@
 											<td align="center" bgcolor="#ffffff"><p style="mso-table-lspace:0;mso-table-rspace:0;"><img src="http://placehold.it/160x160" lp-edit width="160" class="responsive-img" lp-label="Afbeelding"></p></td>
 										</tr>
 										<tr>
-											<td class="text" bgcolor="#ffffff"><lp-multiline lp-label="Onderschrift">Description</lp-multiline></td>
+											<td class="text" bgcolor="#ffffff"><lp-multiline lp-label="Onderschrift">Onderschrift</lp-multiline></td>
 										</tr>
 									</table>
 								</td>
@@ -330,6 +412,116 @@
 	</tr>
 </table>
 </lp-layout>
+
+<!-- tekst, afbeelding links -->
+<lp-layout lp-label="Tekst, afbeelding links">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td align="left" class="text-img-left">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="responsive-table">
+				<tr>
+					<td align="left" class="h1">
+						<lp-singleline lp-label="Kop">Blok met afbeelding links</lp-singleline>
+					</td>
+				</tr>
+				<tr>
+					<td align="left" width="100%" class="cols">
+						<table border="0" cellpadding="0" cellspacing="0" width="50%" align="left" style="border:1px solid #ffffff">
+							<tr>
+								<td align="left" class="image" bgcolor="#ffffff">
+									<p style="mso-table-lspace:0;mso-table-rspace:0;">
+										<img src="http://placehold.it/260x260" lp-edit width="260" class="responsive-img" lp-label="Afbeelding">
+									</p>
+								</td>
+							</tr>
+						</table>
+						<table border="0" cellpadding="0" cellspacing="0" width="50%" align="left" style="border:1px solid #ffffff">
+							<tr>
+								<td align="left" class="text" bgcolor="#ffffff">
+									<p style="mso-table-lspace:0;mso-table-rspace:0;">
+										<lp-multiline lp-label="Text">
+											Dit blok heeft een vaste afbeelding aan de linkerzijde. De tekst loopt niet om de afbeelding heen. De afbeelding kan ook niet verplaatst worden.
+											Dit blok heeft een vaste afbeelding aan de linkerzijde. De tekst loopt niet om de afbeelding heen. De afbeelding kan ook niet verplaatst worden.
+											Dit blok heeft een vaste afbeelding aan de linkerzijde. De tekst loopt niet om de afbeelding heen. De afbeelding kan ook niet verplaatst worden.
+										</lp-multiline>
+									</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</lp-layout>
+
+<!-- tekst, afbeelding rechts -->
+<lp-layout lp-label="Tekst, afbeelding rechts">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td align="left" class="text-img-right">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="responsive-table">
+				<tr>
+					<td align="left" class="h1">
+						<lp-singleline lp-label="Kop">Blok met afbeelding rechts</lp-singleline>
+					</td>
+				</tr>
+				<tr>
+					<td align="left" width="100%" class="cols">
+						<table border="0" cellpadding="0" cellspacing="0" width="50%" align="left" style="border:1px solid #ffffff">
+							<tr>
+								<td align="left" class="text" bgcolor="#ffffff">
+									<p style="mso-table-lspace:0;mso-table-rspace:0;">
+										<lp-multiline lp-label="Text">
+											Dit blok heeft een vaste afbeelding aan de linkerzijde. De tekst loopt niet om de afbeelding heen. De afbeelding kan ook niet verplaatst worden.
+											Dit blok heeft een vaste afbeelding aan de linkerzijde. De tekst loopt niet om de afbeelding heen. De afbeelding kan ook niet verplaatst worden.
+											Dit blok heeft een vaste afbeelding aan de linkerzijde. De tekst loopt niet om de afbeelding heen. De afbeelding kan ook niet verplaatst worden.
+										</lp-multiline>
+									</p>
+								</td>
+							</tr>
+						</table>
+						<table border="0" cellpadding="0" cellspacing="0" width="50%" align="left" style="border:1px solid #ffffff">
+							<tr>
+								<td align="right" class="image" bgcolor="#ffffff">
+									<p style="mso-table-lspace:0;mso-table-rspace:0;">
+										<img src="http://placehold.it/260x260" lp-edit width="260" class="responsive-img" lp-label="Afbeelding">
+									</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</lp-layout>
+
+<!-- banner -->
+<lp-layout lp-label="Afbeelding over volle breedte">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td align="left" class="banner">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="responsive-table">
+				<tr>
+					<td align="left" class="h1">
+						<lp-singleline lp-label="Kop">Blok met afbeelding over de volle breedte</lp-singleline>
+					</td>
+				</tr>
+				<tr>
+					<td align="left" width="100%" class="cols">
+						<img src="http://placehold.it/560x180" lp-edit width="560" class="responsive-img" lp-label="Afbeelding">
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</lp-layout>
+
+
 </lp-repeater>
 
 <!-- footer -->
@@ -345,7 +537,13 @@
 								<td valign="top" class="cols" width="100%">
 									<table border="0" cellpadding="0" cellspacing="0" width="50%" align="left" style="border:1px solid #aaaaaa">
 										<tr>
-											<td bgcolor="#aaaaaa" class="text"><p style="mso-table-lspace:0;mso-table-rspace:0;"><lp-multiline lp-label="Tekst">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</lp-multiline></p></td>
+											<td bgcolor="#aaaaaa" class="text">
+												<p style="mso-table-lspace:0;mso-table-rspace:0;">
+													<lp-multiline lp-label="Tekst">
+														De footer is geschikt voor het tonen van bijvoorbeeld de adresgegevens. De icoontjes aan de rechterzijde worden bij kleinere schermen onder deze tekst geplaatst.
+													</lp-multiline>
+												</p>
+											</td>
 										</tr>
 									</table>
 									<table border="0" cellpadding="0" cellspacing="0" width="50%" align="left" style="border:1px solid #aaaaaa">
