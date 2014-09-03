@@ -50,6 +50,25 @@
 		padding-bottom: 10px;
 	}
 
+	.toc {
+		padding: 10px 20px;
+	}
+
+	.toc .h1 {
+		font-size: 26px;
+		line-height: 30px;
+		font-weight: bold;
+	}
+
+	.toc a {
+		color: #999999;
+	}
+
+	.toc .text {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
 	.multiline {
 		padding: 10px 20px;
 	}
@@ -337,6 +356,24 @@
 	</tr>
 </table>
 
+<!-- table of contents (optional of course) -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td class="toc">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td align="left" class="h1">
+						<lp-singleline lp-label="Inhoudsopgave">In deze nieuwsbrief</lp-singleline>
+					</td>
+				</tr>
+				<tr>
+					<td align="left" class="text"><lp-toc></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
 <!-- repeating blocks -->
 <lp-repeater>
 
@@ -348,7 +385,7 @@
 			<table width="100%" border="0" cellspacing="0" cellpadding="0">
 				<tr>
 					<td align="left" class="h1">
-						<lp-singleline lp-label="Kop">Hier een grote kop</lp-singleline>
+						<lp-singleline lp-label="Kop" lp-toc>Hier een grote kop</lp-singleline>
 					</td>
 				</tr>
 				<tr>
@@ -373,7 +410,7 @@
 						<table cellpadding="0" cellspacing="0" border="0" width="100%">
 							<tr>
 								<td align="left" class="h1">
-									<lp-singleline lp-label="Kop">Cool new stuff</lp-singleline>
+									<lp-singleline lp-label="Kop" lp-toc>Cool new stuff</lp-singleline>
 								</td>
 							</tr>
 							<tr>
@@ -421,7 +458,7 @@
 			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="responsive-table">
 				<tr>
 					<td align="left" class="h1">
-						<lp-singleline lp-label="Kop">Blok met afbeelding links</lp-singleline>
+						<lp-singleline lp-label="Kop" lp-toc>Blok met afbeelding links</lp-singleline>
 					</td>
 				</tr>
 				<tr>
@@ -464,7 +501,7 @@
 			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="responsive-table">
 				<tr>
 					<td align="left" class="h1">
-						<lp-singleline lp-label="Kop">Blok met afbeelding rechts</lp-singleline>
+						<lp-singleline lp-label="Kop" lp-toc>Blok met afbeelding rechts</lp-singleline>
 					</td>
 				</tr>
 				<tr>
@@ -507,7 +544,7 @@
 			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="responsive-table">
 				<tr>
 					<td align="left" class="h1">
-						<lp-singleline lp-label="Kop">Blok met afbeelding over de volle breedte</lp-singleline>
+						<lp-singleline lp-label="Kop" lp-toc>Blok met afbeelding over de volle breedte</lp-singleline>
 					</td>
 				</tr>
 				<tr>
